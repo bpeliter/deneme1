@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- cursor -->
+    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/toons/too-8/too724.ani), url(https://cur.cursors-4u.net/toons/too-8/too724.png), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2009/01/31/winnie-the-pooh-bear-13.html" target="_blank" title="Winnie The Pooh Bear"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Winnie The Pooh Bear" style="position:absolute; top: 0px; right: 0px;" /></a>
+  </head>
+
+  <body class="body">
+    <div class="sidenav">
+      <a href="Notes.html">Notes</a>
+      <a href="Watchlist.html">Watchlist</a>
+      <a href="Songlist.html">Song Playlist</a>
+    </div>
+    
+    <div class="main">
+      <img src="lightsn.gif" id="festive">
+      <div class="header">
+        <h2>My Watchlist</h2>
+        <form action="Watchlist.html" onsubmit="return movieSubmit()">
+        <input class ="form-input" type="text" id="movie-name" maxlength="120" placeholder="Enter a movie name...">
+        <input class ="form-input" type="text" id="director-name" maxlength="120" placeholder="Enter the director's name of the movie...">
+        <select class ="form-input" type ="select"   id = "movie-genre" for="genres">
+          <option class="first-option" value ="none">Choose a genre...</option>      
+          <option value="Fantastic">Fantastic</option>
+          <option value="Romantic">Romantic</option>
+          <option value="Action">Action</option>
+          <option value="Drama">Drama</option>
+          <option value="Sci-fi">Sci-fi</option>
+          <option value="Horror">Horror</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Crime">Crime</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Aimation">Animation</option>
+          <option value="Western">Western</option>
+        </select>
+        <input class ="form-input" type="text" id="movie-content" maxlength="120" placeholder="Description...">
+        <input class ="form-input" type="number" id="movie-year" max="3000" min="1800" placeholder="Enter the published year...">
+        <input class ="form-input" type="number" id="movie-rate" min="1" max="10" step="0.1" placeholder="Enter the IMDB rate..." > 
+        <button type="submit" id="movie-submit" class="addBtn">Add a Movie</button>
+      </form>
+      </div class="movies-container">
+      <ul id="myUL">
+      </ul>
+    </div>
+    <script src="scripts/watch.js"></script>
+    </body>
+
+</html>   

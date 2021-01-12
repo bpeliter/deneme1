@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- cursor -->
+    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/toons/too-8/too724.ani), url(https://cur.cursors-4u.net/toons/too-8/too724.png), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2009/01/31/winnie-the-pooh-bear-13.html" target="_blank" title="Winnie The Pooh Bear"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Winnie The Pooh Bear" style="position:absolute; top: 0px; right: 0px;" /></a>
+  </head>
+
+  <body class="body">
+    <div class="sidenav">
+      <a href="Notes.html">Notes</a>
+      <a href="Watchlist.html">Watchlist</a>
+      <a href="Songlist.html">Song Playlist</a>
+    </div>
+    
+    <div class="main">
+      <img src="lightsn.gif" id="festive">
+      <div class="header">
+        <h2>My Songlist</h2>
+        <form action="Songlist.html" onsubmit="return songSubmit()">
+        <input class ="form-input" type="text" id="song-name" maxlength="120" placeholder="Enter a song name...">
+        <input class ="form-input" type="text" id="song-artist" maxlength="120" placeholder="Enter an artist name...">
+        <button type="submit" id="song-submit" class="addBtn">Add a Song</button>
+      </form>
+      </div class="songs-container">
+      <ul id="myUL">
+      </ul>
+    </div>
+    <script src="scripts/song.js"></script>
+    </body>
+</html>

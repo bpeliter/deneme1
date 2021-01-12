@@ -1,0 +1,271 @@
+#festive {
+    position: absolute;
+    height:50px;
+    top:30px; 
+    left:0px;
+    width:100%;
+    top: 0;
+    background-repeat: repeat-x;
+ }
+
+ .background-image{
+    margin-top: -10px;
+    width: 94%;
+    margin-left: 100px;
+    margin-bottom: -10px;
+ }
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#A36588;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #311313;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.body {
+    background-color: rgb(247, 238, 225);
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.write-note {
+    height: 6em;
+}
+
+.note-container {
+    border: rgb(180, 180, 136) 1px solid;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    background-color: rgb(218, 218, 189);
+}
+
+.line{
+    margin: 0;
+    background-color: rgb(180, 180, 136);
+    height: 1px;
+    border:none;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px;
+    
+}
+
+.note-container p {
+    padding: 15px;
+    font-size: medium;
+    margin-top: 0;
+}
+
+.note-container h4 {
+    text-transform:capitalize;
+    padding-left: 25px;
+    margin-top: 30px;
+    margin-bottom:10px;
+}
+
+.date {
+    margin-left: 5px;
+    font-size: small;
+}
+
+.delete {
+    font-size: large;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-top: 2px;
+}
+.delete:hover {
+    background-color: rgba(255, 0, 0, 0.705);
+    color: white;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#movie-genre {
+    width: 76.57%;
+}
+
+.movie-container p {
+    text-transform:capitalize;
+    margin: 6px;
+}
+
+.movie-container h4 {
+    text-transform:capitalize;
+    margin: 4px;
+}
+
+.song-container h4 {
+    text-transform:capitalize;
+}
+
+.song-container p {
+    text-transform:capitalize;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 10px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 8px;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Style the header */
+.header {
+    background-color:#6D9EA3;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+.form-input {
+    margin: 0;
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    padding: 10px;
+    margin-top: 1px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /*background: rgb(247, 238, 225);*/
+    background: rgb(218, 218, 189);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
